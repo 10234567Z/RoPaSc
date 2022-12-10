@@ -18,7 +18,7 @@ function getComputerChoice() {
      * by this the number cant exceed past the maximum index number of array
      */
     let computerRandomChoice = Math.floor(Math.random() * choices.length);
-    console.log(choices[computerRandomChoice]); // Debugging purposes
+    // console.log(choices[computerRandomChoice]); // Debugging purposes
     return choices[computerRandomChoice].toString();
 }
 function getPlayerChoice(value) {
@@ -28,10 +28,6 @@ function getPlayerChoice(value) {
 
 function playRound(playerSelection, computerSelection) {
 
-    // // What if the playerInput is not in the choices array 
-    // if (!choices.includes(playerSelection)) {
-    //     roundWinner = "Please enter something only among rock , paper or scissor.";
-    // }
     // What if the computer and player choices are same
     if (playerSelection == computerSelection) {
         roundWinner = "Draw";
