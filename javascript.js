@@ -1,6 +1,7 @@
 let choices = ['rock', 'paper', 'scissor'];
 let roundWinner;
 
+const pageBackground = document.querySelector('.container');
 
 function getComputerChoice() {
     /**
@@ -15,9 +16,9 @@ function getComputerChoice() {
     // console.log(choices[computerRandomChoice]); // Debugging purposes
     return choices[computerRandomChoice].toString();
 }
-function getPlayerChoice() {
-    let playerChoice = prompt("Choose Rock , Paper or Scissor", "").toLowerCase();
-    return playerChoice.toString();
+function getPlayerChoice(value) {
+    let playerChoice = value;
+    console.log(playerChoice);
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -64,12 +65,12 @@ function gameLoop() {
         , computerPoints = 0
         , playerPoints = 0;
 
-    let totalRounds = prompt("How many rounds you want to play?", "");
-    if (isNaN(totalRounds)) {
-        alert("Please enter a number");
-        gameLoop() // For restarting the game
-    }
-    else if(totalRounds > 10){
+    let totalRounds = "";
+    // if (isNaN(totalRounds)) {
+    //     alert("Please enter a number");
+    //     gameLoop() // For restarting the game
+    // }
+    if(computerPoints === Math.floor(+totalRounds/2 + 1) || playerPoints ===  Math.floor(+totalRounds/2 + 1)){
         alert("The maximum amount of total rounds are 10")
         gameLoop() // For restarting the game
     }
@@ -103,7 +104,16 @@ function gameLoop() {
             console.log("You won the game by " + (playerPoints - computerPoints))
         }
     }
-
 }
 
+
 gameLoop(); // Game will start from here by calling this function
+
+
+
+
+
+/**first document select all the inner , on click of any of the inner , we will check each of their values and store it inside a variable as player choice
+ * get computer choice by defined code
+ * 
+ */

@@ -1,0 +1,14 @@
+*{
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/pastel-ombre-background-pink-purple_53876-120750.jpg?w=2000");
+}
+#buttons
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    height: 50px;
+    display: inline-block;
+}
