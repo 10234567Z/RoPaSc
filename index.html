@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="buttons">
-        <div class="inner"><button type="button" id="rock"    onclick="getPlayerChoice(this.id)">Rock</button></div>
-        <div class="inner"><button type="button" id="paper"   onclick="getPlayerChoice(this.id)">Paper</button></div>
-        <div class="inner"><button type="button" id="scissor" onclick="getPlayerChoice(this.id)">Scissor</button></div>
-    </div> 
-    <div id="playerScoreContainer">
-        PlayerScore:
-        <p class="playerScore"></p>
-    </div>
-    <div id="computerScoreContainer">
-        ComputerScore:
-        <p class="ComputerScore"></p>
+    <div class="container">
+        <div id="buttons">
+            <div class="inner"><button type="button" id="rock" onclick="getPlayerChoice(this.id)">Rock</button></div>
+            <div class="inner"><button type="button" id="paper" onclick="getPlayerChoice(this.id)">Paper</button></div>
+            <div class="inner"><button type="button" id="scissor" onclick="getPlayerChoice(this.id)">Scissor</button></div>
+        </div>
+        <div id="playerScoreContainer">
+            PlayerScore:
+            <p class="PlayerScore"></p>
+        </div>
+        <div id="computerScoreContainer">
+            ComputerScore:
+            <p class="ComputerScore"></p>
+        </div>
+        <div class="winners">
+
+        </div>
     </div>
 </body>
 </html>
