@@ -123,12 +123,3 @@ function gamePlay() {
     }
 
 }
-
-
-
-
-
-/**first document select all the inner , on click of any of the inner , we will check each of their values and store it inside a variable as player choice
- * get computer choice by defined code
- * 
- */
