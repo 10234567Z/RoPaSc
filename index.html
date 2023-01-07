@@ -7,20 +7,22 @@
     <title>Document</title>
     <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap'); </style>
 </head>
 <body>
     <div class="container">
         <div id="buttons">
-            <div class="inner"><button type="button" id="rock" onclick="getPlayerChoice(this.id)">Rock</button></div>
-            <div class="inner"><button type="button" id="paper" onclick="getPlayerChoice(this.id)">Paper</button></div>
-            <div class="inner"><button type="button" id="scissor" onclick="getPlayerChoice(this.id)">Scissor</button></div>
+            <img id="rock" onclick="getPlayerChoice(this.id)" src="Images/stone_PNG13545.png" height="300px" width="300px">
+            <img id="paper" onclick="getPlayerChoice(this.id)" src="Images/vecteezy_old-paper-background_9414455_626.png" height="300px" width="300px">
+            <img id="scissor" onclick="getPlayerChoice(this.id)" src="Images/scissors-23236.png" height="300px" width="300px">
         </div>
         <div id="playerScoreContainer">
-            PlayerScore:
+            PlayerScore
             <p class="PlayerScore"></p>
         </div>
         <div id="computerScoreContainer">
-            ComputerScore:
+            ComputerScore
             <p class="ComputerScore"></p>
         </div>
         <div class="winners">
