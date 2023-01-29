@@ -13,17 +13,19 @@
 <body>
     <div class="container">
         <div id="buttons">
-            <img id="rock" onclick="getPlayerChoice(this.id)" src="Images/stone_PNG13545.png" >
-            <img id="paper" onclick="getPlayerChoice(this.id)" src="Images/vecteezy_old-paper-background_9414455_626.png">
-            <img id="scissor" onclick="getPlayerChoice(this.id)" src="Images/scissors-23236.png" >
+            <div id="rock" onclick="getPlayerChoice(this.id)"><img src="Images/rock.png" width="300px" height="300px"></div>
+            <div id="paper" onclick="getPlayerChoice(this.id)"><img src="Images/paper.png" width="300px" height="300px"></div>
+            <div id="scissor" onclick="getPlayerChoice(this.id)"><img src="Images/scissor.png" width="300px" height="300px"></div>
         </div>
-        <div id="playerScoreContainer">
-            PlayerScore
-            <p class="PlayerScore"></p>
-        </div>
-        <div id="computerScoreContainer">
-            ComputerScore
-            <p class="ComputerScore"></p>
+        <div class="scoreContainers">
+            <div id="playerScoreContainer">
+                PlayerScore
+                <p class="PlayerScore"></p>
+            </div>
+            <div id="computerScoreContainer">
+                ComputerScore
+                <p class="ComputerScore"></p>
+            </div>
         </div>
         <div class="winners">
 
