@@ -64,6 +64,10 @@ body{
     text-align: center;
 }
 
+p{
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 1000px){
     .scoreContainers{
         width: 75%;
