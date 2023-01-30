@@ -1,45 +1,114 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
-body { line-height: 1;}
-ol,ul { list-style: none;}
-blockquote,q { quotes: none;}
-blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
-table { border-collapse: collapse; border-spacing: 0;}
 *{
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container {
-    display: grid;
-    place-items: center;
-}
-#buttons {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+body{
+    font-size: xx-large;
     font-family: 'Rubik Bubbles';
-    max-width: 5000px;
-    max-height: 310px;
-    top: 35%;
-    gap: 5px;
-    place-content: center;
+    background:url("https://c0.wallpaperflare.com/preview/871/274/395/wall-texture-background-white.jpg") no-repeat fixed;
+    background-size: cover; 
+    text-align: center;
+    align-content: center;
 }
-#buttons div {
-    max-width: 500px;
-    border: 5px outset rgba(164,164,164,0.78);
-    margin: 0px -1px 0px -1px;
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    flex-wrap: wrap;
+    order: 1;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#buttons > div{
+    border: 5px outset rgba(106,115,164,0.78);
+    background-color: white;
+}
+
+#buttons > div:nth-child(1){
+    margin-right: 5px;
+}
+
+#buttons > div:nth-child(3){
+    margin-left: 5px;
 }
 
 .scoreContainers {
-    position: relative;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    top: 100%;
-    max-height: 100px;
-    place-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 40px 0px 0px 0px; 
+    order: 3;
+    color: #A40000;
 }
 
-@media all and (max-width: 575px) and (max-height: 795px) {
+.scoreContainers > div{
+    border: 2px outset rgba(106,115,164,0.78);
+    text-align: center;
+}
+
+.winners {
+    order: 2;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
     .scoreContainers{
-        top: 75%;
+        width: 75%;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    img{
+        width: 175px;
+        height: 175px;
+    }
+
+    .scoreContainers{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 75px;
+        height: 75px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .scoreContainers{
+        width: 99%;
+        font-size: 15px;
+        margin: 100px 0px 0px 0px;
+    }
+    .winners{
+        font-size: 10px;
+    }
+    #buttons {
+        margin-top: 120px;
     }
 }
