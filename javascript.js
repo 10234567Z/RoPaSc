@@ -68,25 +68,19 @@ function playRound(playerSelection, computerSelection) {
 
 function gamePlay() {
 
-    /** This commented out code is for future upgradations!
-
-    // let totalRounds = "";
-    // if (isNaN(totalRounds)) {
-    //     alert("Please enter a number");
-    //     gameLoop() // For restarting the game
-    // }
-
-    */
-
     let announceWinner = document.querySelector('.winners');
     let container = document.querySelector('.container');
+    let playAgain = document.getElementById('ReButton');
     if(computerPoints === 5){
-        container.textContent = "Computer side WINS!" ;
+        announceWinner.textContent = "Computer side WINS!"
+        playAgain.style.visibility= "visible";
     }
     else if(playerPoints === 5){
-       container.textContent = "Humanity WON!";
+        announceWinner.textContent = "Humanity WON!";
+        playAgain.style.visibility= "visible";
     }
     else if(playerPoints !== 5 && computerPoints !== 5){
+
         if(roundWinner == "Draw"){
             announceWinner.textContent = "Whoa! Its a draw.";
         }
@@ -97,10 +91,12 @@ function gamePlay() {
 
             /**To not forward to next round even after 5 points on board */
             if(computerPoints === 5){
-                container.textContent = "Computer side WINS!" ;
+                announceWinner.textContent = "Computer side WINS!";
+                playAgain.style.visibility= "visible";
             }
             else if(playerPoints === 5){
-               container.textContent = "Humanity WON!";
+                announceWinner.textContent = "Humanity WON!";
+                playAgain.style.visibility= "visible";
             }
         }
         else if(roundWinner == "Computer"){
@@ -110,11 +106,14 @@ function gamePlay() {
 
             /**To not forward to next round even after 5 points on board */
             if(computerPoints === 5){
-                container.textContent = "Computer side WINS!" ;
+                announceWinner.textContent = "Computer side WINS!";
+                playAgain.style.visibility= "visible";
             }
             else if(playerPoints === 5){
-               container.textContent = "Humanity WON!";
+                announceWinner.textContent = "Humanity WON!";
+                playAgain.style.visibility= "visible";
             }
+            
         }
     }
 

@@ -11,6 +11,8 @@ body{
     text-align: center;
     align-content: center;
 }
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -32,8 +34,12 @@ body{
 #buttons > div{
     border: 5px outset rgba(106,115,164,0.78);
     background-color: white;
+    border-radius: 20px;
 }
 
+img {
+    border-radius: 20px;
+}
 #buttons > div:nth-child(1){
     margin-right: 5px;
 }
@@ -56,17 +62,58 @@ body{
 .scoreContainers > div{
     border: 2px outset rgba(106,115,164,0.78);
     text-align: center;
+    border-radius: 10px;
 }
 
 .winners {
     order: 2;
     margin-top: 15px;
     text-align: center;
+    min-height: 50px;
 }
 
 p{
     margin-top: 10px;
 }
+
+.ReButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 4;
+    margin-top: 20px;
+}
+
+#ReButton {
+    color: white;
+    font-size: 50px; 
+    line-height: 25px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    font-family: 'Rubik Bubbles', cursive;
+    font-family: 'Teko', sans-serif;
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: radial-gradient(at center center, rgb(68, 73, 2) 0%, rgb(64, 68, 26) 0%, rgb(55, 53, 9) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 2px solid rgb(255, 255, 255); 
+    display: inline-block;
+    visibility: hidden;
+    min-height: 50px;
+    min-width: 100px;
+}
+    
+#ReButton:hover {
+    background: #444902; 
+}
+
+#ReButton:active {
+    background: #373509; 
+}
+/* Media queries from here on */
 
 @media only screen and (max-width: 1000px){
     .scoreContainers{
