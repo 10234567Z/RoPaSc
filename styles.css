@@ -113,6 +113,10 @@ p{
 #ReButton:active {
     background: #373509; 
 }
+
+#playerScoreContainer,#computerScoreContainer,#ReButton{
+    cursor: alias;
+}
 /* Media queries from here on */
 
 @media only screen and (max-width: 1000px){
