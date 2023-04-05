@@ -12,4 +12,7 @@ Features Currently Available:
 ⚫ Whoever reached 5 rounds win , would be declared winner.  
 ⚫ Includes *Play Again* button available.  
 
-A sample glance to the game here , and if you want to play [click here](https://10234567z.github.io/RoPaSc/)
+A sample glance to the game here , and if you want to play [click here](https://10234567z.github.io/RoPaSc/)  
+
+![image](https://user-images.githubusercontent.com/93607971/230029168-1370c5ad-866d-4139-9fec-1dde04b1ef32.png)
+
